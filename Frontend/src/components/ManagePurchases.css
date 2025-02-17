@@ -1,0 +1,93 @@
+/* Container styles */
+.container-purchases {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container-purchases h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search input */
+.purchases-search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Table styling */
+.purchases-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.purchases-table th,
+.purchases-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.purchases-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.purchases-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Button styling */
+.purchases-button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.purchases-button:hover {
+  opacity: 0.9;
+}
+
+/* Button colors */
+.purchases-button-edit {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.purchases-button-delete {
+  background-color: #e83e8c;
+  color: white;
+}
+
+.purchases-button-cancel {
+  background-color: #ff8800;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .purchases-table {
+    font-size: 14px;
+  }
+
+  .purchases-search {
+    font-size: 14px;
+  }
+
+  .purchases-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

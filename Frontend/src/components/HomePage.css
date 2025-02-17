@@ -1,0 +1,79 @@
+/* HomePage.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-section {
+  margin-bottom: 50px;
+}
+
+.image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-img {
+  width: 500px; /* Set the fixed width of the image */
+  height: 300px; /* Set the fixed height of the image */
+  object-fit: cover; /* Scale the image to fill the dimensions, with possible cropping */
+  border: none; /* Remove any border */
+}
+
+
+.highlight-section {
+  background-color: #ffcc00;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.world-map h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.world-map p {
+  font-size: 16px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 50px;
+}

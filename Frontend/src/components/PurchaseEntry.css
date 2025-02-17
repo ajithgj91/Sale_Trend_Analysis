@@ -1,0 +1,80 @@
+.purchase-entry-container {
+  width: 100%;
+  max-width: 90%; /* Limit the form width */
+  padding: 20px;
+  background: #9fa583; /* Light blue background */
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  border: 1px solid #c1e0ff; /* Lighter border to complement the background */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.purchase-entry-container h1 {
+  text-align: center;
+  color: #2c3e50; /* Darker text color for contrast */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Form layout with grid */
+.purchase-entry-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Spacing between inputs */
+}
+
+/* Style for input wrapper */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styling */
+.purchase-entry-container input,
+.purchase-entry-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* White background for inputs */
+}
+
+/* Button styling */
+.purchase-entry-container button {
+  grid-column: span 2; /* Buttons span both columns */
+  padding: 12px;
+  background-color: #080b0e; /* Dark background color */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.purchase-entry-container button:hover {
+  background-color: #af2a12; /* Change to a red hue on hover */
+  box-shadow: 0 4px 8px rgba(19, 154, 10, 0.2);
+}
+
+.back-to-home-button {
+  margin-top: 10px;
+  background-color: #090303; /* Dark background for back button */
+}
+
+.back-to-home-button:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .purchase-entry-container form {
+    grid-template-columns: 1fr; /* Stack all inputs in one column */
+  }
+}

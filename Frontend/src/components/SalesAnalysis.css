@@ -1,0 +1,316 @@
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #ecf0f1;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  color: #1cc88a;
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: center; /* Aligns the cards vertically in the middle */
+  gap: 120px; /* Adds equal spacing between the cards */
+  margin: 20px 0; /* Adds some vertical spacing around the stats container */
+}
+
+.card {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 35px; /* Adds padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  font-size: 18px; /* Font size for text */
+  text-align: center; /* Centers the text within the card */
+  width: 200px; /* Fixed width for uniform card size */
+  font-weight: 600;
+  border: 2px solid #e0e0e0; 
+}
+
+.total-purchase {
+  color: #1976d2; 
+  border-color: #1976d2; 
+}
+
+.net-total-sales {
+  color: #388e3c; 
+  border-color: #388e3c; 
+}
+
+.today-purchase {
+  color: #f57c00;
+  border-color: #f57c00; 
+}
+
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  border-color: #000; 
+}
+
+
+.total-purchase:hover {
+  color: #1565c0; 
+  border-color: #1565c0; 
+}
+
+.net-total-sales:hover {
+  color: #2e7d32; 
+  border-color: #2e7d32; 
+}
+
+.today-purchase:hover {
+  color: #ef6c00; 
+  border-color: #ef6c00; 
+}
+
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.charts {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.bar-chart,
+.pie-chart {
+  width: 95%;
+}
+
+.bar-chart h3,
+.pie-chart h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #212529;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  background-color: #6c757d;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-section h3 {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu li {
+  margin: 15px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #adb5bd;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.menu a:hover {
+  background-color: #495057;
+  color: #fff;
+}
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+  margin-bottom: 20px; 
+  background-color: #f9f9f9; 
+  padding: 20px 30px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; 
+}
+
+.filter-section input[type="date"] {
+  padding: 5px 10px; 
+  font-size: 14px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  outline: none; 
+  transition: border-color 0.2s ease;
+}
+
+.filter-section input[type="date"]:focus {
+  border-color: #36a2eb; 
+}
+
+.filter-section button {
+  padding: 6px 15px; 
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff; 
+  background-color: #36a2eb; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-section button:hover {
+  background-color: #1e88d9; 
+}
+
+.filter-section button:active {
+  background-color: #1565c0; 
+}
+
+.menu li button {
+  background-color: #212529; 
+  color: white; 
+  font-size: 16px; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  width: 100%; 
+  text-align: left; 
+  font-size: 1.1em;
+}
+
+.menu li button:hover {
+  background-color: #495057;
+  color: #7fde89; 
+}
+
+.menu li button:focus {
+  outline: none; 
+}
+
+.menu li button i {
+  margin-right: 10px; 
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the circle properly */
+}
+
+.profile-section h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.back-to-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+.back-to-dashboard button {
+  padding: 10px 20px;
+  background-color: #0c552f; /* Bootstrap-like primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.back-to-dashboard button:hover {
+  background-color: #b32700; /* Darker shade for hover effect */
+}
